@@ -10,10 +10,60 @@
 <body>
     <div data-include="components/header.html"></div>
 
-    <!-- Aquí va el contenido principal de la página -->
     <main>
-        <h1>Bienvenidos a GordiBurguer</h1>
-        <p>Las hamburguesas más sabrosas de la ciudad 🍔🔥</p>
+        <section class="welcome-section">
+            <h2>Bienvenidos a GordiBurguer</h2>
+            <p>Las hamburguesas más sabrosas de la ciudad 🍔🔥</p>
+        </section>
+
+        <section class="order-section">
+            <h2>Realiza tu pedido</h2>
+
+            <form id="formPedido" novalidate>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" maxlength="50" required placeholder="Tu nombre" />
+
+                <label for="clave">Contraseña para confirmar pedido:</label>
+                <input type="password" id="clave" name="clave" required placeholder="********" />
+
+                <label for="cantidad">Cantidad de hamburguesas:</label>
+                <input type="number" id="cantidad" name="cantidad" min="1" max="20" step="1" required value="1" />
+
+                <fieldset>
+                    <legend>Tipo de hamburguesa:</legend>
+                    <label><input type="radio" id="clasica" name="tipo" value="Clásica" checked /> Clásica</label>
+                    <label><input type="radio" id="doble" name="tipo" value="Doble" /> Doble</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Ingredientes extra:</legend>
+                    <label><input type="checkbox" id="queso" name="extras" value="Queso" /> Queso</label>
+                    <label><input type="checkbox" id="bacon" name="extras" value="Bacon" /> Bacon</label>
+                    <label><input type="checkbox" id="huevo" name="extras" value="Huevo" /> Huevo</label>
+                </fieldset>
+
+                <label for="combo">Tamaño del combo:</label>
+                <select id="combo" name="combo" required>
+                    <option value="" disabled selected>Seleccione tamaño</option>
+                    <option value="Pequeño">Pequeño</option>
+                    <option value="Mediano">Mediano</option>
+                    <option value="Grande">Grande</option>
+                    <option value="Familiar">Familiar</option>
+                    <option value="Gigante">Gigante</option>
+                </select>
+
+                <label for="color_bandeja">Color de la bandeja:</label>
+                <input type="color" id="color_bandeja" name="color_bandeja" value="#cb3434" />
+
+                <label for="fecha_hora">Fecha y hora de recogida:</label>
+                <input type="datetime-local" id="fecha_hora" name="fecha_hora" required />
+
+                <div class="buttons">
+                    <button type="submit">Enviar pedido</button>
+                    <button type="reset">Borrar datos</button>
+                </div>
+            </form>
+        </section>
     </main>
 
     <div data-include="components/footer.html"></div>

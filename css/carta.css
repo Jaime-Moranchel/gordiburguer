@@ -1,15 +1,25 @@
 .img-container {
     display: flex;
+    gap:1rem;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
 }
 
-.img-container .cuadrado {
-    width: 100px;
-    height: 100px;
+.img-container img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow:0 4px 10px rgba(0, 0, 0, 0.1);
+    width:300px; /*tamaño a escoger*/
+    transition: trnasform 0.3s ease;
     background-color: red;
     border: 1px solid red;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.img-container img:hover {
+    transform: scale(1.05);
 }
