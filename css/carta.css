@@ -1,0 +1,15 @@
+.img-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.img-container .cuadrado {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
