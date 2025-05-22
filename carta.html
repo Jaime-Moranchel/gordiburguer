@@ -15,6 +15,7 @@
     <main>
         <h1>Nuestra Carta</h1>
         <p>Descubre nuestras deliciosas hamburguesas y más</p>
+        <a href="#tabla-precios">Ver tabla de precios</a>
         <section>
             <h2>Hamburguesas</h2>
             <ul>
@@ -23,8 +24,8 @@
                 <li>Hamburguesa de Pollo - 8€</li>
             </ul>
             <div class="img-container">
-                <img src="assets/img/hamburguesa_pollo_frito.jpeg" alt="Hamburguesa Clásica">
-                <img src="assets/img/hamburguesa_pollo_frito.jpeg" alt="Hamburguesa BBQ">
+                <img src="assets/img/hamburguesa_queso.jpg" alt="Hamburguesa Clásica">
+                <img src="assets/img/hamburguesa_barbacoa.jpg" alt="Hamburguesa BBQ">
                 <img src="assets/img/hamburguesa_pollo_frito.jpeg" alt="Hamburguesa de Pollo ">
             </div>
         </section>
@@ -35,6 +36,10 @@
                 <li>Ensalada - $3.00</li>
                 <li>Onion Rings - $2.50</li>
             </ul>
+            <div class="img-container">
+                <img src="assets/img/patatas.png" alt="Papas Fritas">
+                <img src="assets/img/ensalada.png" alt="Ensalada">
+                <img src="assets/img/onion_rings.png" alt="Onion Rings">
         </section>
         <section>
             <h2>Bebidas</h2>
@@ -43,6 +48,10 @@
                 <li>Cerveza - $3.00</li>
                 <li>Agua - $1.00</li>
             </ul>
+            <div class="img-container">
+                <img src="assets/img/sodas.jpg" alt="Refresco">
+                <img src="assets/img/beers.jpg" alt="Cerveza">
+                <img src="assets/img/water.jpg" alt="Agua">
         </section>
         <section>
             <h2>Postres</h2>
@@ -51,7 +60,37 @@
                 <li>Pastel de Chocolate - $3.50</li>
                 <li>Fruta Fresca - $2.00</li>
             </ul>
+            <div class="img-container">
+                <img src="assets/img/ice_cream.jpg" alt="Helado">
+                <img src="assets/img/chocolate_cake.jpg" alt="Pastel de Chocolate">
+                <img src="assets/img/fruit.jpg" alt="Fruta Fresca">
+            </div>
         </section>
+
+
+        <section>
+            <h2 id="tabla-precios">Tabla de Precios</h2>
+            <table border="1">
+                <tr>
+                <th rowspan="2">Producto</th>
+                <th colspan="2">Precio</th>
+                </tr>
+                <tr>
+                <th>Normal</th>
+                <th>Combo</th>
+                </tr>
+                <tr>
+                <td>Hamburguesa Clásica</td>
+                <td>8.95€</td>
+                <td>11.95€</td>
+                </tr>
+                <tr>
+                <td>Onion Rings</td>
+                <td colspan="2">2.50€</td>
+                </tr>
+            </table>
+        </section>
+
     </main>
     <div data-include="components/footer.html"></div>
 </body>

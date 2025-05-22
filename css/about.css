@@ -1,0 +1,30 @@
+.about-section {
+    background: #292929;
+    border-radius: 10px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+.about-section h1 {
+    color: #ffd54f;
+    margin-bottom: 1rem;
+}
+.about-section p {
+    margin-bottom: 1rem;
+    font-size: 1.15rem;
+}
+.about-values h2 {
+    color: #cb3434;
+    margin-bottom: 0.5rem;
+}
+.about-values ul {
+    list-style: none;
+    padding-left: 0;
+}
+.about-values li {
+    margin-bottom: 0.5rem;
+    font-size: 1.05rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}

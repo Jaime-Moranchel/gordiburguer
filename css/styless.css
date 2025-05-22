@@ -15,29 +15,27 @@ body {
     flex-direction: column;
 }
 
-/* Header */
 header {
-    background-color: #cb3434;
-    padding: 1rem 2rem;
+  display: flex;
+  justify-content: center; /* Centra el nav dentro del header */
+  background-color: #cb3434;
+  padding: 1rem 2rem;
 }
 
-header h1 {
-    font-size: 2rem;
-}
-
-.nav-list {
-    list-style: none;
-    display: flex;
-    gap: 1.5rem;
-    margin-top: 0.5rem;
+nav {
+  display: flex;
+  justify-content: space-between; /* Espacia los <a> uniformemente */
+  width: 100%; /* Ocupa todo el ancho del header */
+  max-width: 1000px; /* Opcional: limita el ancho para pantallas grandes */
+  gap: 1rem; /* Espacio entre elementos, opcional */
 }
 
 nav a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.1rem;
-    transition: color 0.3s ease;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
 }
 
 nav a:hover,
